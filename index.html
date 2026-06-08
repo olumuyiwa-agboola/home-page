@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Olumuyiwa Agboola</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231a1a18'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia%2C serif' font-size='26' font-weight='700' letter-spacing='-1' fill='%23f7f6f2'%3EOA%3C/text%3E%3C/svg%3E"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            :root {
+                --bg: #f7f6f2;
+                --text: #1a1a18;
+                --muted: #6b6b67;
+                --faint: rgba(0, 0, 0, 0.08);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg: #111110;
+                    --text: #eeecea;
+                    --muted: #888884;
+                    --faint: rgba(255, 255, 255, 0.07);
+                }
+            }
+
+            html {
+                font-size: 20px;
+            }
+
+            body {
+                font-family: "DM Mono", monospace;
+                background: var(--bg);
+                color: var(--text);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                padding: 2rem;
+            }
+
+            .grid-bg {
+                position: fixed;
+                inset: 0;
+                background-image:
+                    linear-gradient(var(--faint) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--faint) 1px, transparent 1px);
+                background-size: 48px 48px;
+                pointer-events: none;
+            }
+
+            main {
+                position: relative;
+                max-width: 720px;
+                width: 100%;
+            }
+
+            .line {
+                width: 48px;
+                height: 2px;
+                background: var(--text);
+                margin-bottom: 2rem;
+            }
+
+            .tag {
+                font-size: 0.65rem;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                color: var(--muted);
+                margin-bottom: 1rem;
+            }
+
+            h1 {
+                font-family: "DM Serif Display", serif;
+                font-size: clamp(2.8rem, 8vw, 4.2rem);
+                line-height: 1.05;
+                font-weight: 400;
+            }
+
+            h1 em {
+                font-style: italic;
+                color: var(--muted);
+            }
+
+            .bio {
+                font-size: 0.8rem;
+                font-weight: 300;
+                color: var(--muted);
+                letter-spacing: 0.03em;
+                line-height: 1.9;
+                margin: 1.5rem 0 2.5rem;
+            }
+
+            .stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.65rem;
+                margin-top: 0.6rem;
+            }
+
+            .stack-item {
+                display: flex;
+                align-items: center;
+                gap: 0.35rem;
+                font-size: 0.65rem;
+                letter-spacing: 0.06em;
+                color: var(--muted);
+            }
+
+            .stack-item i {
+                font-size: 1rem;
+                color: var(--text);
+            }
+
+            nav {
+                display: flex;
+                gap: 24px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 0.65rem;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--text);
+                text-decoration: none;
+                border-bottom: 1px solid var(--text);
+                padding-bottom: 2px;
+                transition: opacity 0.2s ease;
+            }
+
+            nav a:hover {
+                opacity: 0.4;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 1.75rem;
+                right: 2rem;
+                font-size: 11px;
+                letter-spacing: 0.06em;
+                color: var(--muted);
+                font-weight: 300;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-bg" aria-hidden="true"></div>
+
+        <main>
+            <div class="line"></div>
+            <p class="tag">Software engineer</p>
+            <h1>Olumuyiwa<br /><em>Agboola</em></h1>
+            <div class="bio">
+                <p>Excellent software craftsmanship.</p>
+                <div class="stack">
+                    <span class="stack-item"
+                        ><i class="devicon-dot-net-plain"></i> .NET</span
+                    >
+                    <span class="stack-item"
+                        ><i class="devicon-spring-plain"></i> Spring</span
+                    >
+                    <span class="stack-item"
+                        ><i class="devicon-linux-plain"></i> Linux</span
+                    >
+                    <span class="stack-item"
+                        ><i class="devicon-docker-plain"></i> Docker</span
+                    >
+                    <span class="stack-item"
+                        ><i class="devicon-kubernetes-plain"></i>
+                        Kubernetes</span
+                    >
+                    <span class="stack-item"
+                        ><i
+                            class="devicon-amazonwebservices-plain-wordmark"
+                        ></i>
+                        AWS</span
+                    >
+                    <span class="stack-item"
+                        ><i class="devicon-azure-plain"></i> Azure</span
+                    >
+                </div>
+            </div>
+
+            <nav>
+                <a
+                    href="https://github.com/olumuyiwa-agboola"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
+                >
+                <a
+                    href="https://www.linkedin.com/in/olumuyiwa-agboola/"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                >
+                <a href="mailto:agboolaod@gmail.com">Email</a>
+            </nav>
+        </main>
+
+        <footer>Lagos, Nigeria</footer>
+    </body>
+</html>
